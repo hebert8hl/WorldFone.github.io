@@ -1,0 +1,262 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.margen-interno {
+    padding: 0 50px;
+
+}
+
+.header {
+    padding: 0px;
+    background: url(imagenes/celular-huawei-scaled-1.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.menu {
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+    flex-flow: row nowrap;
+    height: 80px;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255, .5);
+}
+
+.logo {
+    color: #fff;
+    flex: 1 1 auto;
+}
+
+.logo a {
+    color: wheat;
+    font-size: 40px;
+}
+
+.logo a:hover {
+    color: #343434;
+}
+
+.nav {
+    flex: 5 1 auto;
+}
+
+.nav a {
+    color: wheat;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0 11px;
+    letter-spacing: 2px;
+}
+
+.nav a:hover {
+    color: #343434;
+}
+
+.social {
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.social a {
+    font-size: 20px;
+    color: #fff;
+}
+
+.social a:hover {
+    color: #343434;
+}
+
+.texto-principal {
+    height: 580px;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'lora', serif;
+    font-size: 21px;
+    color: wheat;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.section {
+    background: #f7f7f7;
+    display: flex;
+}
+
+
+
+.articulos {
+    padding: 10px;
+    background: #fce7d0;
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.article a {
+    color: #FFF5EB;
+    font-size: 13px;
+    padding: 10px;
+    background: #B4846C;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+article a:hover {
+    background: #5F939A;
+}
+
+.article img {
+    width: 100%;
+}
+
+h3 {
+    color: #343A40;
+    font-size: 27px;
+    padding: 10px 0;
+    margin-top: -40px;
+}
+
+h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 0px 0 30px 0;
+    color: #343A40;
+}
+
+.article {
+    flex: 1 1 40%;
+    color: #343A40;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 10px 10px 0 0px;
+    flex: 1 1 45%;
+    background: #FFEEDB;
+}
+
+t {
+    font-size: 27px;
+    color: #7D5A50;
+}
+
+.navegacion {
+    background: #FCDEC0;
+    flex: 1 1 100%;
+
+}
+
+.navegacion a {
+    color: #000;
+}
+
+.navegacion a:hover {
+    color: #ffc107;
+}
+
+/* .aside { 
+
+ comentar   background: #f4d160;
+
+flex: 1 1 auto;
+margin: 10px 5px 10px 0;
+}
+
+.aside img {
+    width: 100%;
+} */
+
+h4 {
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+/* .publicidad {
+    background-color: chocolate;
+} */
+
+.footer {
+    background: #FCDEC0;
+    display: flex;
+    justify-content: center;
+}
+
+.pie {
+    background: #FCDEC0;
+    width: 300px;
+    align-items: center;
+}
+
+@media all and (max-width: 1120px) {
+
+    .section {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .aside {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+
+    h1 {
+        font-size: 15px;
+    }
+
+    .texto-principal {
+        height: 470px;
+    }
+}
+
+@media all and (max-width: 762px) {
+    .articulos {
+        flex-direction: column;
+    }
+
+}
+
+@media all and (max-width: 650px) {
+    .off {
+        display: none;
+    }
+
+    .nav a {
+        font-size: 25px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .aside {
+        flex-direction: column;
+    }
+}
